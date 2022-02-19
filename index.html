@@ -28,42 +28,63 @@
             font-family: 'Roboto', sans-serif;
             font-family: 'Titillium Web', sans-serif;
         }
+        ul li.active{
+            color: #FF5D56;
+        }
+        @media screen and (max-width: 1100px){
+            li.present{
+                display: none;
+            }
+            ul.nav{
+                margin: auto;
+            }
+            div.socialMedia{
+                left: 50%;
+                bottom: 0;
+                transform: translatex(-50%);
+                display: inline-flex;
+            }
+            img[alt="MyPic"]{
+                display: none;
+            }
+        }
     </style>
     <script src="icon/icon.js"></script>
 </head>
 <body>
-    <div class="kings h-screen">
-    <div class="md:flex md:h-18 md:justify-around md:bg-black" id="fixed">
+<div class="kings h-screen">
+    <div class="md:flex  md:h-18 md:justify-around md:bg-black md:fixed md:right-0 md:left-0 md:top-0 md:pb-1" id="fixed">
         <ul>
-            <li class="md:text-red-500 md:p-4 md:text-xl"><a href="#">Giovanni The Coder</a></li>
+            <li class="present md:text-red-500 md:p-4 md:text-xl"><a href="#">Giovanni The Coder</a></li>
         </ul>
-        <ul>
-            <li class="md:text-red-500 md:p-4 md:text-xl md:float-left"><a href="#home">Home</a></li>
-            <li class="md:text-white md:p-4 md:text-xl md:float-left"><a href="#about">About</a></li>
-            <li class="md:text-white md:p-4 md:text-xl md:float-left"><a href="#Services">Services</a></li>
-            <li class="md:text-white md:p-4 md:text-xl md:float-left"><a href="#">Resume</a></li>
+        <ul class="nav">
+            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#home">Home</a></li>
+            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#about">About</a></li>
+            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#Services">Services</a></li>
+            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#Resume">Resume</a></li>
+   <script src="js/king.js"></script>
         </ul>
     </div>
-    <div class="fixed">
-        <a href="https://www.facebook.com/nikalisa.45/" style="background: #4267B2;" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-facebook-f md:text-2xl" style="color: #FEFEFE;"></i></a>
-        <a href="https://www.linkedin.com/in/kalisa-ineza-giovanni-63a406231/" style="background-color:#0077B5;" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-linkedin-in md:text-2xl" style="color: #FEFEFE;"></i></a> 
-        <a href="https://mail.google.com/mail/u/0/#search/gthecoderkalisaineza%40gmail.com" style="background-color:#D44638" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-solid fa-envelope md:text-2xl" style="color: #FEFEFE;"></i></a> 
-        <a href="https://www.instagram.com/ni_kalisa/" style="background-color:rgba(255, 255, 255, 0.308); background-image: linear-gradient(to bottom right, rgba(0, 0, 255, 0.308), rgba(255, 0, 0, 0.637));" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-instagram md:text-2xl" style="color: #fc5454ee;"></i></a> 
-        <a href="https://github.com/kalisaineza?tab=projects" style="background-color: rgba(128, 128, 128, 0.212)" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-github md:text-2xl" style="color: #FEFEFE;"></i></a> 
+    <div class="fixed left-0 socialMedia">
+        <a target="_blank" href="https://www.facebook.com/nikalisa.45/" style="background: #4267B2;" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-facebook-f md:text-2xl" style="color: #FEFEFE;"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kalisa-ineza-giovanni-63a406231/" style="background-color:#0077B5;" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-linkedin-in md:text-2xl" style="color: #FEFEFE;"></i></a> 
+        <a target="_blank" href="https://mail.google.com/mail/u/0/#search/gthecoderkalisaineza%40gmail.com" style="background-color:#D44638" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-solid fa-envelope md:text-2xl" style="color: #FEFEFE;"></i></a> 
+        <a target="_blank" href="https://www.instagram.com/ni_kalisa/" style="background-color:rgba(255, 255, 255, 0.308); background-image: linear-gradient(to bottom right, rgba(0, 0, 255, 0.308), rgba(255, 0, 0, 0.637));" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-instagram md:text-2xl" style="color: #fc5454ee;"></i></a> 
+        <a target="_blank" href="https://github.com/kalisaineza?tab=projects" style="background-color: rgba(128, 128, 128, 0.212)" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-github md:text-2xl" style="color: #FEFEFE;"></i></a> 
     </div>
-    <div class="md:text-white md:text-2xl md:ml-24 mt-16">
+    <div id="home" class="md:text-white md:text-2xl md:ml-24 mt-16">
         Hi, There I'm a fullstack web developer<br>And a good web designer <br>
         You can Contact Me <br>
         and the we talk business
     </div>
     <button class="md:text-white md:text-xl md:mt-16 md:border-white md:border-2 md:border-solid md:rounded-xl md:w-52 md:h-16 md:ml-24 md:text-red-500 king">Download CV</button></div>
-    <div style="background-color: rgba(0, 0, 0, 0.91);" class="pb-13">
+    <div style="background-color: rgba(0, 0, 0, 0.91);" class="pb-13 h-screen">
          <div id="about" class="md:text-3xl md:text-center md:pt-10" style="color: #FF5D56;">About Me</div>
          <div class="text-gray-400 text-center">Professional Profile</div>
          <div class="md:text-center md:text-white md:mt-20 md:text-2xl"><span style="color: white; border-bottom: 5px solid #FF5D56;">I'm </span>KALISA INEZA Giovanni</div>
          <div class="md:flex md:justify-around md:items-center">
             <img src="./portofolio/image/265906698_251150957082453_3947739037715021202_n.jpg" class="md:mb-20 md:h-96 md:w-96 md:rounded-xl" alt="MyPic">
-            <div class="md:text-gray-400 md:text-2xl">A talented fullstack developer with well rounded experience in Web development,<br>
+            <div class="md:text-gray-400 md:text-2xl aboutMe">A talented fullstack developer with well rounded experience in Web development,<br>
                 Object-oriented and user-centered design. Motivated designer and developer with <br>
                 experience creating custom websites through many fields' skills and having Strong <br>
                 collaboration Skills.
@@ -84,17 +105,5 @@
                 </div>                
             </div>
          </div>
-    </div>
-    <div style="background-color: rgba(0, 0, 0, 0.89);">
-        <div>
-            <div id="Services" class="md:text-3xl md:text-center md:pt-10" style="color: #FF5D56;">My Services</div>
-            <div class="flex justify-around items-center h-3/4">
-                <div class="bg-black-900">
-                    
-                </div>
-                <div></div>
-                <div></div>
-            </div>
-    </div>
 </body>
 </html> 
