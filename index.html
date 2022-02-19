@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://unpkg.com/tailwindcss@^2.0/dist/tailwind.min.css" rel="stylesheet">
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <style>
         div.kings{
@@ -47,63 +49,70 @@
             img[alt="MyPic"]{
                 display: none;
             }
+            .aboutMe{
+                font-size: 15px;
+            }
+            div.fixed a:hover{
+                height: 50px;
+                background-color: red;
+            }
         }
     </style>
     <script src="icon/icon.js"></script>
 </head>
 <body>
 <div class="kings h-screen">
-    <div class="md:flex  md:h-18 md:justify-around md:bg-black md:fixed md:right-0 md:left-0 md:top-0 md:pb-1" id="fixed">
+    <div class="flex  h-18 justify-around bg-black fixed right-0 left-0 top-0 pb-1" id="fixed">
         <ul>
-            <li class="present md:text-red-500 md:p-4 md:text-xl"><a href="#">Giovanni The Coder</a></li>
+            <li class="present text-red-500 p-4 text-xl"><a href="#">Giovanni The Coder</a></li>
         </ul>
         <ul class="nav">
-            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#home">Home</a></li>
-            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#about">About</a></li>
-            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#Services">Services</a></li>
-            <li class="md:text-white king md:p-4 md:text-xl md:float-left"><a href="#Resume">Resume</a></li>
+            <li class="text-white king p-4 text-xl float-left"><a href="#home">Home</a></li>
+            <li class="text-white king p-4 text-xl float-left"><a href="#about">About</a></li>
+            <li class="text-white king p-4 text-xl float-left"><a href="#Services">Services</a></li>
+            <li class="text-white king p-4 text-xl float-left"><a href="#Resume">Resume</a></li>
    <script src="js/king.js"></script>
         </ul>
     </div>
     <div class="fixed left-0 socialMedia">
-        <a target="_blank" href="https://www.facebook.com/nikalisa.45/" style="background: #4267B2;" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-facebook-f md:text-2xl" style="color: #FEFEFE;"></i></a>
-        <a target="_blank" href="https://www.linkedin.com/in/kalisa-ineza-giovanni-63a406231/" style="background-color:#0077B5;" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-linkedin-in md:text-2xl" style="color: #FEFEFE;"></i></a> 
-        <a target="_blank" href="https://mail.google.com/mail/u/0/#search/gthecoderkalisaineza%40gmail.com" style="background-color:#D44638" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-solid fa-envelope md:text-2xl" style="color: #FEFEFE;"></i></a> 
-        <a target="_blank" href="https://www.instagram.com/ni_kalisa/" style="background-color:rgba(255, 255, 255, 0.308); background-image: linear-gradient(to bottom right, rgba(0, 0, 255, 0.308), rgba(255, 0, 0, 0.637));" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-instagram md:text-2xl" style="color: #fc5454ee;"></i></a> 
-        <a target="_blank" href="https://github.com/kalisaineza?tab=projects" style="background-color: rgba(128, 128, 128, 0.212)" class="md:flex md:justify-center md:items-center md:w-12 thecoder md:h-12"><i class="fa-brands fa-github md:text-2xl" style="color: #FEFEFE;"></i></a> 
+        <a target="_blank" href="https://www.facebook.com/nikalisa.45/" style="background: #4267B2;" class="flex justify-center items-center w-12 thecoder h-12"><i class="fa-brands fa-facebook-f text-2xl" style="color: #FEFEFE;"></i></a>
+        <a target="_blank" href="https://www.linkedin.com/in/kalisa-ineza-giovanni-63a406231/" style="background-color:#0077B5;" class="flex justify-center items-center w-12 thecoder h-12"><i class="fa-brands fa-linkedin-in text-2xl" style="color: #FEFEFE;"></i></a> 
+        <a target="_blank" href="https://mail.google.com/mail/u/0/#search/gthecoderkalisaineza%40gmail.com" style="background-color:#D44638" class="flex justify-center items-center w-12 thecoder h-12"><i class="fa-solid fa-envelope text-2xl" style="color: #FEFEFE;"></i></a> 
+        <a target="_blank" href="https://www.instagram.com/ni_kalisa/" style="background-color:rgba(255, 255, 255, 0.308); background-image: linear-gradient(to bottom right, rgba(0, 0, 255, 0.308), rgba(255, 0, 0, 0.637));" class="flex justify-center items-center w-12 thecoder h-12"><i class="fa-brands fa-instagram text-2xl" style="color: #fc5454ee;"></i></a> 
+        <a target="_blank" href="https://github.com/the-coder-kalisa/kalisa" style="background-color: rgba(128, 128, 128, 0.212)" class="flex justify-center items-center w-12 thecoder h-12"><i class="fa-brands fa-github text-2xl" style="color: #FEFEFE;"></i></a> 
     </div>
-    <div id="home" class="md:text-white md:text-2xl md:ml-24 mt-16">
+    <div id="home" class="text-white text-2xl ml-24 mt-16">
         Hi, There I'm a fullstack web developer<br>And a good web designer <br>
         You can Contact Me <br>
         and the we talk business
     </div>
-    <button class="md:text-white md:text-xl md:mt-16 md:border-white md:border-2 md:border-solid md:rounded-xl md:w-52 md:h-16 md:ml-24 md:text-red-500 king">Download CV</button></div>
-    <div style="background-color: rgba(0, 0, 0, 0.91);" class="pb-13 h-screen">
-         <div id="about" class="md:text-3xl md:text-center md:pt-10" style="color: #FF5D56;">About Me</div>
-         <div class="text-gray-400 text-center">Professional Profile</div>
-         <div class="md:text-center md:text-white md:mt-20 md:text-2xl"><span style="color: white; border-bottom: 5px solid #FF5D56;">I'm </span>KALISA INEZA Giovanni</div>
-         <div class="md:flex md:justify-around md:items-center">
-            <img src="./portofolio/image/265906698_251150957082453_3947739037715021202_n.jpg" class="md:mb-20 md:h-96 md:w-96 md:rounded-xl" alt="MyPic">
-            <div class="md:text-gray-400 md:text-2xl aboutMe">A talented fullstack developer with well rounded experience in Web development,<br>
+    <button class="text-white text-xl mt-16 border-white border-2 border-solid rounded-xl w-52 h-16 ml-24 text-red-500 king">Download CV</button></div>
+    <div style="background-color: rgba(0, 0, 0, 0.91);" class="h-full aboutMe">
+         <div id="about" class="md:text-3xl text-center pt-10" style="color: #FF5D56;">About Me</div>
+         <div class="text-gray-400 text-2xl text-center">Professional Profile</div>
+         <div class="text-center text-white mt-20 text-2xl aboutMe"><span style="color: white; border-bottom: 5px solid #FF5D56;">I'm </span>KALISA INEZA Giovanni</div>
+         <div class="flex justify-around items-center">
+            <img src="./portofolio/image/265906698_251150957082453_3947739037715021202_n.jpg" class="mb-20 h-96 w-96 rounded-xl" alt="MyPic">
+            <div class="text-gray-400 text-2xl aboutMe">A talented fullstack developer with well rounded experience in Web development,<br>
                 Object-oriented and user-centered design. Motivated designer and developer with <br>
                 experience creating custom websites through many fields' skills and having Strong <br>
                 collaboration Skills.
                 <div class="pt-5">
                   <div class="flex justify-between">
                       <div>
-                          <i class="p-3 fa-solid fa-calendar-days" style="color: #FF5D56;"></i><span class="pl-2">Date of birth:</span><span class="text-gray-500 text-2xl"> 31 August 2005</span><br>
-                          <i class="p-3 fa-brands fa-freebsd" style="color: #FF5D56;"></i><span class="pl-2">Freelance:</span><span class="text-gray-500 text-2xl"> Available</span><br>
-                          <i class="p-3 fa-solid fa-flag" style="color: #FF5D56;"></i><span class="pl-2">Nationality:</span><span class="text-gray-500 text-2xl"> Rwanda</span>
+                          <i class="p-3 fa-solid fa-calendar-days" style="color: #FF5D56;"></i><span class="pl-2">Date of birth:</span><span class="text-gray-500 aboutMe text-2xl"> 31 August 2005</span><br>
+                          <i class="p-3 fa-brands fa-freebsd" style="color: #FF5D56;"></i><span class="pl-2">Freelance:</span><span class="text-gray-500 aboutMe text-2xl"> Available</span><br>
+                          <i class="p-3 fa-solid fa-flag" style="color: #FF5D56;"></i><span class="pl-2">Nationality:</span><span class="text-gray-500 aboutMe text-2xl"> Rwanda</span>
                       </div>
                       <div class="pl-14">
-                        <i class="p-3 fa-solid fa-location-dot" style="color: #FF5D56;"></i><span class="pl-2">Location:</span><span class="text-gray-500 text-2xl"> Norvege, Rwanda</span><br>
-                        <i class="p-3 fa-solid fa-globe" style="color: #FF5D56;"></i><span class="pl-2">Spoken language: </span><span class="text-gray-500 text-2xl">English, French, Kinyarwanda</span><br>
-                        <i class="p-3 fa-solid fa-graduation-cap" style="color: #FF5D56"></i><span class="pl-2">Current School: </span><span class="text-gray-500 text-2xl">Rwanda Coding Academy</span><br>
+                        <i class="p-3 fa-solid fa-location-dot" style="color: #FF5D56;"></i><span class="pl-2">Location:</span><span class="text-gray-500 aboutMe text-2xl"> Norvege, Rwanda</span><br>
+                        <i class="p-3 fa-solid fa-globe" style="color: #FF5D56;"></i><span class="pl-2">Spoken language: </span><span class="text-gray-500 aboutMe text-2xl">English, French, Kinyarwanda</span><br>
+                        <i class="p-3 fa-solid fa-graduation-cap" style="color: #FF5D56"></i><span class="pl-2">Current School: </span><span class="text-gray-500 aboutMe text-2xl">Rwanda Coding Academy</span><br>
                       </div>
                       </div>
                   </div>
                 </div>                
             </div>
-         </div>
+    </div>
 </body>
 </html> 
